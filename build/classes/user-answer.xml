@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="answer1" class="spring_cons_injection_map.Answer">
+		<constructor-arg value="3"></constructor-arg>
+		<constructor-arg value="Java is Programing Language"></constructor-arg><!-- type="java.lang.String" -->
+		<constructor-arg value="2/12/2013"></constructor-arg>
+	</bean>
+
+	<bean id="answer2" class="spring_cons_injection_map.Answer">
+		<constructor-arg value="5"></constructor-arg>
+		<constructor-arg value="pl sql is a script language"></constructor-arg>
+		<constructor-arg value="12/03/2015"></constructor-arg><!-- type="java.util.Date" -->
+	</bean>
+
+	<bean id="user1" class="spring_cons_injection_map.User">
+		<constructor-arg value="Omesh"></constructor-arg>
+		<constructor-arg value="Core_Java"></constructor-arg>
+		<constructor-arg value="omesh@gmail.com"></constructor-arg>
+	</bean>
+
+
+	<bean id="user2" class="spring_cons_injection_map.User">
+		<constructor-arg value="Manas"></constructor-arg>
+		<constructor-arg value="PL_SQL"></constructor-arg>
+		<constructor-arg value="manas@gmail.com"></constructor-arg>
+	</bean>
+
+	<bean id="q" class="spring_cons_injection_map.Question">
+		<constructor-arg value="Neha"></constructor-arg>
+		<constructor-arg value="45" type="int"></constructor-arg>
+		<constructor-arg>
+			<map>
+				<entry key-ref="answer1" value-ref="user1"></entry>
+				<entry key-ref="answer2" value-ref="user2"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+
+
+
+</beans>

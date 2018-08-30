@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_73">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="D:/GFT Pune/Java Training-Stream/Libraries/spring-2.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/GFT Pune/Java Training-Stream/Libraries/spring-aop.jar"/>
+	<classpathentry kind="lib" path="D:/GFT Pune/Java Training-Stream/Libraries/spring-beans.jar"/>
+	<classpathentry kind="lib" path="D:/Study/Set_Up_Java/spring/SpringLibs3.2.0/spring-beans-3.2.0.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Study/Set_Up_Java/spring/Jars Javatpoint/springjars/core/com.springsource.org.apache.commons.logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Study/Set_Up_Java/spring/Jars Javatpoint/springjars/core/org.springframework.beans-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="D:/Study/Set_Up_Java/spring/Jars Javatpoint/springjars/core/org.springframework.core-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

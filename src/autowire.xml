@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+     
+     <!-- 1. autowire by name id should be the same as the reference name -->          
+    <bean id="b" class="spring_autowire.B"></bean>
+    <bean id="a" class="spring_autowire.A" autowire="byName"></bean>           
+               
+     <!--2. autowire by type -->          
+     <!-- by type == reference name && id need not to be same but only one bean type should be defined-->   
+     <!-- <bean id="b" class="spring_autowire.B"></bean>
+      <bean id="a" class="spring_autowire.A" autowire="byType"></bean> --> 
+       <!-- <bean id="b1" class="spring_autowire.B"></bean> 
+     this shows the run time exception. because the bean b1 has been another type of the same bean.
+     there shud be only one type of a bean while defined.
+     -->  
+    
+    
+     <!--3. autowire by cons() -->
+    <!--  <bean id="b" class="spring_autowire.B"></bean>
+    <bean id="a" class="spring_autowire.A" autowire="byConstructor"></bean> -->
+     
+        
+</beans>
